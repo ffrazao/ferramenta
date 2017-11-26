@@ -129,6 +129,7 @@ public class UtilitarioExcel {
 		return result;
 	}
 
+	@SuppressWarnings("deprecation")
 	private static Object getValor(Iterator<Cell> cellIterator, FormulaEvaluator evaluator) {
 		Object result = null;
 		Cell cell = cellIterator.next();
@@ -155,6 +156,7 @@ public class UtilitarioExcel {
 		return result;
 	}
 
+	@SuppressWarnings("deprecation")
 	private static Object handleCell(int type, Cell cell, FormulaEvaluator evaluator) {
 		if (type == HSSFCell.CELL_TYPE_STRING) {
 			return cell.getStringCellValue();
